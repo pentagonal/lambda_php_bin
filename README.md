@@ -19,10 +19,10 @@ upload binary to Layers, and will be accessible on `/opt/bin` as binary or `/opt
 - imagick
 - amazon-elasticache-cluster-client
 - mongodb
-- pthreads
+- pthreads (does not support on fastcgi-fpm)
 - opcache
 - igbinary
 
 ### NOTE
 
-Pthreads does not support on CGI-fpm. Please remove pthreads.ini on lambda/etc/php/conf.d/
+Pthreads does not support on CGI-fpm. Please remove pthreads.ini on lambda/etc/php/conf.d/ if you use cgi/fpm
