@@ -22,3 +22,7 @@ upload binary to Layers, and will be accessible on `/opt/bin` as binary or `/opt
 - pthreads
 - opcache
 - igbinary
+
+### NOTE
+
+Pthreads does not support on CGI-fpm. Please remove pthreads.ini on lambda/etc/php/conf.d/
